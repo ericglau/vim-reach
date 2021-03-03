@@ -1,6 +1,8 @@
 # Vim/Neovim Reach
 
-Language Support for [Reach](https://reach.sh/) in Vim/Neovim. 
+Language Support for [Reach](https://reach.sh/) in Vim/Neovim.  
+
+Tested on Mac OS. Probably works on Linux.
 
 ## Installation
 
