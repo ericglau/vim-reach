@@ -5,4 +5,4 @@ unzip -d vscode-reach reachsh.reach-ide-0.12.0.vsix
 mkdir ~/.vim/reach-ide
 cp -R vscode-reach/extension/server ~/.vim/reach-ide
 rm -rf vscode-reach
-
+cp -n .vimrc ~/.vimrc
