@@ -2,6 +2,8 @@
 
 Language Support for [Reach](https://reach.sh/) in Vim/Neovim.  
 
+Makes use of the [Reach language server](https://github.com/reach-sh/reach-ide) and [LanguageClient-neovim](https://github.com/autozimu/LanguageClient-neovim).
+
 Tested on Mac OS. Probably works on Linux.
 
 ## Installation
