@@ -24,8 +24,8 @@ let g:LanguageClient_serverCommands = {
                         \ }
 
 let g:LanguageClient_loggingLevel = 'DEBUG'
-let g:LanguageClient_loggingFile =  expand('~/.vim/reach-language-client.log')
-let g:LanguageClient_serverStderr = expand('~/.vim/reach-language-server.log')
+let g:LanguageClient_loggingFile =  expand('~/.vim/reach-ide/reach-language-client.log')
+let g:LanguageClient_serverStderr = expand('~/.vim/reach-ide/reach-language-server.log')
 
 nnoremap <silent> <F4> :call LanguageClient#textDocument_hover()<CR>
 nnoremap <silent> <F3> :call LanguageClient#textDocument_codeAction()<CR>

@@ -10,8 +10,8 @@ cp -n init.vim ~/.config/nvim/init.vim
 retVal=$?
 vim +PlugInstall +qall
 if [ $retVal -ne 0 ]; then
-    echo "The ~/.vimrc file already exists and will not be overwritten. Manually edit its configuration according to https://github.com/ericglau/vim-reach/blob/master/.vimrc"
-    echo "Vim Reach has been installed, but the ~/.vimrc file must be manually configured."
+    echo "The ~/.config/nvim/init.vim file already exists and will not be overwritten. Manually edit its configuration according to https://github.com/ericglau/vim-reach/blob/master/init.vim"
+    echo "Neovim Reach has been installed, but the ~/.config/nvim/init.vim file must be manually configured."
 else
-    echo "Vim Reach has been successfully installed!"
+    echo "Neovim Reach has been successfully installed!"
 fi
