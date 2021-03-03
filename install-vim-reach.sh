@@ -6,3 +6,4 @@ mkdir ~/.vim/reach-ide
 cp -R vscode-reach/extension/server ~/.vim/reach-ide
 rm -rf vscode-reach
 cp -n .vimrc ~/.vimrc
+vim +PlugInstall +qall
