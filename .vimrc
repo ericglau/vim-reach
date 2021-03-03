@@ -1,3 +1,8 @@
+autocmd VimEnter *
+  \  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+  \|   PlugInstall --sync | q
+  \| endif
+
 " Specify a directory for plugins
 " - For Neovim: stdpath('data') . '/plugged'
 " - Avoid using standard Vim directory names like 'plugin'
@@ -24,14 +29,9 @@ let g:LanguageClient_serverCommands = {
                         \ }
 
 let g:LanguageClient_loggingLevel = 'DEBUG'
-let g:LanguageClient_loggingFile =  expand('~/.vim/reach-ide/logs/client.log')
-let g:LanguageClient_serverStderr = expand('~/.vim/reach-ide/logs/server.log')
+let g:LanguageClient_loggingFile =  expand('~/.vim/reach-language-client.log')
+let g:LanguageClient_serverStderr = expand('~/.vim/reach-language-server.log')
 
 nnoremap <silent> <F4> :call LanguageClient#textDocument_hover()<CR>
 nnoremap <silent> <F3> :call LanguageClient#textDocument_codeAction()<CR>
-
-autocmd VimEnter *
-  \  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
-  \|   PlugInstall --sync | q
-  \| endif
 
