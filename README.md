@@ -21,3 +21,5 @@ Git clone this repo and run `./install-neovim-reach.sh`
 - Compile errors: automatically highlighted
 - Quick Fix: put cursor over a compile error and press F3, then choose a suggested quick fix
 - Hover Definitions: put cursor over any Reach statement and press F4 to view more information
+
+![Screenshot](screenshot.png)
