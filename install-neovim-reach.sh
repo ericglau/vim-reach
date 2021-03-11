@@ -1,5 +1,5 @@
-sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/syntax/javascript.vim --create-dirs https://raw.githubusercontent.com/pangloss/vim-javascript/master/syntax/javascript.vim'
+sh -c 'if [ ! -f "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim ]; then curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim; else echo "plug.vim already exists - skipping"; fi'
+sh -c 'if [ ! -f "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/syntax/javascript.vim ]; then curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/syntax/javascript.vim --create-dirs https://raw.githubusercontent.com/pangloss/vim-javascript/master/syntax/javascript.vim; else echo "javascript.vim already exists - skipping"; fi'
 rm -rf vscode-reach
 unzip -d vscode-reach reachsh.reach-ide-0.12.0.vsix
 sh -c 'mkdir "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/reach-ide'
