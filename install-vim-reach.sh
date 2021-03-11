@@ -1,5 +1,5 @@
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-curl -fLo ~/.vim/syntax/javascript.vim --create-dirs https://raw.githubusercontent.com/pangloss/vim-javascript/master/syntax/javascript.vim
+if [ ! -f ~/.vim/autoload/plug.vim ]; then curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim; else echo "plug.vim already exists - skipping"; fi
+if [ ! -f ~/.vim/syntax/javascript.vim ]; then curl -fLo ~/.vim/syntax/javascript.vim --create-dirs https://raw.githubusercontent.com/pangloss/vim-javascript/master/syntax/javascript.vim; else echo "javascript.vim already exists - skipping"; fi
 rm -rf vscode-reach
 unzip -d vscode-reach reachsh.reach-ide-0.12.0.vsix
 mkdir ~/.vim/reach-ide
